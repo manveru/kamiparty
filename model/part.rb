@@ -66,11 +66,11 @@ module KamiParty
     # Exposed methods
 
     def href
-      Parts.r(Ramaze::Helper::CGI.u(name))
+      Parts.r(Ramaze::Helper::CGI.u(name)).to_s
     end
 
     def href_edit
-      Admin.r(:edit, id)
+      Admin.r(:edit, id).to_s
     end
 
     # A layout is a part that has no layout
