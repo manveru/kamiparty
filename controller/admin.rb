@@ -30,12 +30,10 @@ module KamiParty
 
       if @part.valid? and @part.save
         flash[:good] = success_message
+        redirect @part.href_edit
       else
-        flash[:bad] = error_message
         form_errors_from_model(@part)
       end
-
-      redirect @part.href_edit
     end
   end
 end
