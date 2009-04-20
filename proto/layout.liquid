@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>KamiParty</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>KamiParty</h1>
+      <div class="menu">
+        <a href="/admin">Administration</a>
+        <a href="/admin/new">New Part</a>
+        <a href="{{ part.href_edit }}">Edit {{location}}</a>
+    </div>
+    <div class="page">
+      <div class="content">
+        {{ content }}
+      </div>
+      <div class="sidebar">
+        {% include 'sidebar' %}
+      </div>
+    </div>
+    <div class="footer">
+      &copy; 2009 by Michael Fellinger
+    </div>
+  </body>
+</html>

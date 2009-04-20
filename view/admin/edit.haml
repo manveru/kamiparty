@@ -1,0 +1,9 @@
+%h2
+  %a{:href => @part.href}= "Show #{@part.name}"
+%form{:method => :post}
+  %table
+    = form_text('Name', :name, @part.name)
+    = form_select('Syntax', :syntax, @syntaxes, :selected => @part.syntax)
+    = form_select('Layout', :layout_id, @layouts, :selected => @part.layout_fid)
+    ~ form_textarea('Template', :template, h(@part.template))
+    = form_submit('Update')

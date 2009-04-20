@@ -1,0 +1,23 @@
+Following parts are in your system:
+
+%table.parts
+  %tr
+    %th Name
+    %th Syntax
+    %th Language
+    %th Actions
+  - @parts.each do |part|
+    %tr.part
+      %td.name
+        - if part.layout?
+          = part.name
+        - else
+          %a{:href => part.href}= part.name
+      %td.syntax
+        = part.syntax
+      %td.language
+        = part.language
+      %td.edit
+        %a{:href => part.href_edit} Edit
+
+%a{:href => r(:new)} Create new part
