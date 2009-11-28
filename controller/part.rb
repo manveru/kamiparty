@@ -15,7 +15,7 @@ module KamiParty
     end
 
     def layout(*name)
-      return '{{ content }}' unless @part and layout_part = @part.layout
+      return '{{ content }}' unless @part && layout_part = @part.layout
       action.engine = layout_part.engine
 
       return layout_part.template
