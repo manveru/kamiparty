@@ -14,6 +14,7 @@ Ramaze.setup do
   gem 'sequel'
   gem 'haml'
   gem 'liquid'
+  gem 'locale'
 end
 
 # Initialize controllers and models
