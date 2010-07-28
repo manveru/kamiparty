@@ -15,6 +15,8 @@ Ramaze.setup do
   gem 'haml'
   gem 'liquid'
   gem 'locale'
+  gem 'sqlite3-ruby'
+  gem 'thin'
 end
 
 # Initialize controllers and models
