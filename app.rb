@@ -15,7 +15,7 @@ Ramaze.setup do
   gem 'haml'
   gem 'liquid'
   gem 'locale'
-  gem 'sqlite3-ruby'
+  gem 'sqlite3-ruby', lib: 'sqlite3'
   gem 'thin'
 end
 
